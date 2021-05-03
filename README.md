@@ -4,6 +4,8 @@ Ymir(尤弥尔) is a blog theme, created by Di in May, 2021. [Ymir](https://en.w
 
 This is a pre-mature version of blog theme, and a lot of work could be done to improve it.
 
+**Thanks** to some ideas and code from [Jekyll-Gravity](https://github.com/hemangsk/Gravity) ([old blog](https://jokerdii.github.io/blog-2018-21/)), [theme-sakura](https://2heng.xin/theme-sakura/), [WowThemes](https://www.wowthemes.net/),  etc. (Great examples to learn!)
+
 
 
 ## Q&A
