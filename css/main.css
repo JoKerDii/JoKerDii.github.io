@@ -126,7 +126,6 @@ a.more-about:active {
   /* clip-path: inset(1% 89% 86% 1%); */
   clip-path: ellipse(5% 6% at 6% 8%);
 }
-
 .clip-card:hover {
   clip-path: ellipse(70% 70%);
 }
