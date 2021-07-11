@@ -2,6 +2,12 @@
 Thanks to the contribution of Mediumish WowThemes: https://www.wowthemes.net
 
 */
+
+
+/* @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=ZCOOL+XiaoWei&display=swap');
+
 .mainheading {
   padding:1rem 0rem;
 }
@@ -30,7 +36,8 @@ pre {
   border: #E3EDF3 1px solid;
   width: 100%;
   padding: 10px;
-  font-family: Microsoft JhengHei,monospace, sans-serif;
+  /* font-family: Microsoft JhengHei,monospace, sans-serif; */
+  font-family: "Quicksand", Arial, sans-serif;
   font-size: 14px;
   white-space: pre;
   overflow: auto;
@@ -41,6 +48,8 @@ pre {
 a.more-about{
   position: relative;
   /* font-family: Microso ft JhengHei; */
+  /* font-family: 'ZCOOL XiaoWei', serif; */
+  font-family: "Quicksand", Arial, sans-serif;
   /* left:6px; */
   text-decoration: none;
   text-transform: uppercase;
@@ -76,7 +85,30 @@ a.more-about:active {
   transform: translateY(-1px);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
+/* .chinese-about{
+  font-family: 'ZCOOL XiaoWei', serif!important;
+} */
 
+.subsection-about  {
+  letter-spacing: 1px;
+  margin-bottom: 2em;
+  margin-top: 2em;
+}
+
+.sub-section div{
+  background-color: #f2f3f7; 
+  border-radius: 5px; 
+  padding: 20px;
+}
+
+.sub-section ul{
+  margin-top: 1em;
+  margin-bottom: 1em;
+ /* line-height: 1.8; */
+}
+.skills{
+  margin-top: 0;
+}
 /* add shadow to the links box */
 .card{
   transition: all 0.4s;
@@ -116,7 +148,8 @@ a.more-about:active {
   letter-spacing: 0.1rem;
 }
 .navbar-brand span {
-  font-family:monospace;
+  /* font-family:monospace; */
+  font-family: "Quicksand", Arial, sans-serif;
   color:rgba(0,0,0,.6);
   letter-spacing: 0.1rem;
 }
@@ -188,6 +221,10 @@ section.recent-posts {
   display:inline-block;
   padding-bottom:20px;
   margin-bottom:-1px;
+}
+
+.section-title p{
+  font-family: 'Quicksand', 'ZCOOL XiaoWei';
 }
 .article-post ol, .article-post ul {
   margin-bottom: 1.5rem;
@@ -341,7 +378,8 @@ span.post-name a,span.post-read-more a:hover {
 }
 .mediumnavigation .nav-item,.dropdown-menu {
   font-size: 1.1rem;
-  font-family: monospace;
+  /* font-family: monospace; */
+  font-family: "Quicksand", Arial, sans-serif;
   transition: 0.5s;
 }
 .mediumnavigation .search-icon {
@@ -355,7 +393,8 @@ span.post-name a,span.post-read-more a:hover {
   margin-right: 5px;
 } 
 .mainheading h1.sitetitle {
-  font-family: monospace,Microsoft JhengHei,Righteous;
+  /* font-family: monospace,Microsoft JhengHei,Righteous; */
+  font-family: "Quicksand", Arial, sans-serif;
 }
 .mainheading h1.posttitle {
   font-weight:500;
@@ -376,7 +415,8 @@ span.post-name a,span.post-read-more a:hover {
   color:rgba(0,0,0,.8);
 }
 .article-post {
-  font-family: Microsoft JhengHei, Merriweather;
+  /* font-family: Microsoft JhengHei, Merriweather; */
+  font-family: "Quicksand", Arial, sans-serif;
   font-size: 1.0rem;
   line-height: 1.84;
   color: rgba(0,0,0,.8);
@@ -577,8 +617,50 @@ ul.tags li a:hover {
 .authorpostbox .img-thumb {
   width:100%;
 }
+
+.blog-content{
+  margin: 0 auto; 
+  max-width: 90.0rem; 
+  width: 100%; 
+  padding-left: 2.0rem; 
+  padding-right: 2.0rem;
+  font-family: "Quicksand", Arial, sans-serif;
+}
+
+.blog-content ul{
+  margin: 3.2rem 0 3.2rem 0; 
+  list-style: none; 
+  padding: 0;
+}
+
+.blog-content li{
+  font-size: 1.1rem; 
+  @media only screen and (max-width : 768px) { margin: 1.6rem 0 1.6rem 0 };
+}
+
+.blog-content span{
+  display: inline-block; 
+  width: 10.0rem; 
+  text-align: right; 
+  margin-right: 2.0rem; 
+  @media only screen and (max-width : 768px) { display: block; text-align: left };
+}
+
+.blog-content a{
+  font-size: 1.1rem; 
+  color: $fg-color; 
+  font-weight: 500;
+}
+
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
-  font-family: Microsoft JhengHei,-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  /* font-family: Microsoft JhengHei,-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif; */
+  font-family: "Quicksand", 'ZCOOL XiaoWei', Arial, sans-serif;
+}
+
+.about-text{
+  font-family: "Quicksand", Arial, sans-serif;
+  line-height: 2;
+  
 }
 .article-post .h1, .article-post .h2, .article-post .h3, .article-post .h4, .article-post .h5, .article-post .h6, .article-post h1, .article-post h2, .article-post h3, .article-post h4, .article-post h5, .article-post h6 {
   font-weight: 700;
@@ -779,3 +861,128 @@ iframe {
   padding: 2px 5px 2px 5px;
   cursor: pointer;
 }
+
+
+/* timeline */
+
+.timeline-centered {
+  position: relative;
+  margin-bottom: 30px; }
+
+.timeline-centered:before, .timeline-centered:after {
+  content: " ";
+  display: table; }
+
+.timeline-centered:after {
+  clear: both; }
+
+.timeline-centered:before, .timeline-centered:after {
+  content: " ";
+  display: table; }
+
+.timeline-centered:after {
+  clear: both; }
+
+.timeline-centered:before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 4px;
+  background: #f2f3f7;
+  top: 20px;
+  bottom: 20px;
+  margin-left: 29px; }
+
+.timeline-centered .timeline-entry {
+  position: relative;
+  margin-top: 5px;
+  margin-left: 30px;
+  margin-bottom: 10px;
+  clear: both; }
+
+.timeline-centered .timeline-entry .timeline-entry-inner {
+  position: relative;
+  margin-left: -20px; }
+
+.timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background: #2c98f0;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+  text-align: center;
+  -moz-box-shadow: 0 0 0 5px #f2f3f7;
+  -webkit-box-shadow: 0 0 0 5px #f2f3f7;
+  box-shadow: 0 0 0 5px #f2f3f7;
+  line-height: 40px;
+  float: left; }
+  .timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon i {
+    color: #fff; }
+  .timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon.color-2 {
+    background: #f1acac; }
+  .timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon.color-3 {
+    background: #f3d28b; }
+  .timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon.color-4 {
+    background: #e6b6ee; }
+  .timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon.color-5 {
+    background: #95b6b3; }
+  .timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon.color-none {
+    background: #fff;
+    width: 20px;
+    height: 20px;
+    margin-left: 10px; }
+
+.timeline-centered .timeline-entry .timeline-entry-inner .timeline-label {
+  position: relative;
+  background: #f2f3f7;
+  padding: 1.5em;
+  margin-left: 60px;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding;
+  border-radius: 5px;
+  background-clip: padding-box; }
+
+.timeline-centered .timeline-entry .timeline-entry-inner .timeline-label:after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 9px 9px 9px 0;
+  border-color: transparent #f2f3f7 transparent transparent;
+  left: 0;
+  top: 10px;
+  margin-left: -9px; }
+
+.timeline-centered .timeline-entry .timeline-entry-inner .timeline-label p + p {
+  margin-top: 15px; }
+
+.timeline-centered .timeline-entry .timeline-entry-inner .timeline-label h2 {
+  font-size: 20px;
+  font-family: "Quicksand", Arial, sans-serif;
+  font-weight: 500; }
+
+.timeline-centered .timeline-entry .timeline-entry-inner .timeline-label h3 {
+  font-size: 15px;
+  font-style: italic;
+  font-family: "Quicksand", Arial, sans-serif;
+ -webkit-opacity: .4;
+  -moz-opacity: .4;
+  opacity: .4;
+  -ms-filter: alpha(opacity=40);
+  filter: alpha(opacity=40);}
+
+.timeline-centered .timeline-entry .timeline-entry-inner .timeline-label h2 a {
+  color: #000; }
+
+.timeline-centered .timeline-entry .timeline-entry-inner .timeline-label h2 span {
+  -webkit-opacity: .4;
+  -moz-opacity: .4;
+  opacity: .4;
+  -ms-filter: alpha(opacity=40);
+  filter: alpha(opacity=40);
+  font-size: 16px; }
