@@ -182,7 +182,7 @@ a.more-about:active {
   border-radius: 10px;
   transition: all 0.5s;
   /* clip-path: inset(1% 89% 86% 1%); */
-  clip-path: ellipse(5% 6% at 6% 8%);
+  clip-path: ellipse(5% 6% at 6% 7%);
 }
 .clip-card:hover {
   clip-path: ellipse(70% 70%);
