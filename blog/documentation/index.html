@@ -40,10 +40,10 @@
 
         <ul class="navbar-nav ml-auto">
 
-          <li class="nav-item ">
+          <!-- <li class="nav-item ">
 
             <a class="nav-link" href="/"><i class="fas fa-paw"></i> About</a>
-          </li>
+          </li> -->
 
           <li class="nav-item ">
             <a class="nav-link" href="/projects"><i class="fas fa-link"></i> Links</a>
@@ -69,9 +69,9 @@
             <div class="col-md-12 flex-first flex-md-unordered">
               <div class="mainheading">
 
-                <h1 class="posttitle">Documentation - Theme Ymir</h1>
+                <h1 class="posttitle">Hello World</h1>
                 <div class="article-post">
-                  May 1, 2021
+                  May 1, 2022
                 </div>
               </div>
 
@@ -79,156 +79,9 @@
 
               <body>
                 <div class="article-post">
-                  <p>This is an introduction to Theme Ymir, created by Di in May, 2021.
-                    <a href="https://en.wikipedia.org/wiki/Ymir">Ymir</a>(尤弥尔) is the ancestor of all jötnar from Norse
-                    Mythology.
+                  <p>Hi! This is Di. I'm a Data Science & Machine Learning enthusiast. Love music and playing piano. I'm going to graduate from Harvard Chan School soon. Very excited about any opportunity to grow as a Data Scientist!
                   </p>
-                  <blockquote cite="https://en.wikipedia.org/wiki/Ymir">
-                    <p style="background: #eee;border-radius: 5px;padding: 15px;">"Of Ymir's flesh was earth
-                      created,&nbsp;
-                      of his blood the sea,&nbsp;
-                      of his bones the hills,&nbsp;
-                      of his hair trees and plants,&nbsp;
-                      of his skull the heaven;<br>
-                      and of his brows the gentle powers formed Midgard for the sons of men;&nbsp;
-                      but of his brain the heavy clouds are all created" <br>
-                      -- Grímnismál</p>
-                  </blockquote>
 
-                  <h2 id="section-one">h2 heading</h2>
-                  <h3 id="topic-one">h3 heading</h3>
-                  <p>This is a paragraph. You may want to include a <a href="https://github.com/JoKerDii"
-                      target="_blank">hyperlink</a> in the paragraph.</p>
-                  <p>This may be another <b>paragraph</b>.</p>
-                  <h4>h4 heading</h4>
-                  <h5>h5 heading</h5>
-                  <h6>h6 heading</h6>
-
-                  <h2 id="code">Code</h2>
-                  <h3 id="hidden-code">Hidden code</h3>
-                  <p> Bash code can be included and hidden as follows. </p>
-                  <div class="highlight">
-                    <pre style="background-color:#fff;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-sh" data-lang="sh">mkdir /home/dizhen/workplace/
-<span style="color:#0086b3">cd</span> /home/dizhen/workplace/
-wget https://ftp-trace.ncbi.nlm.nih.gov/sra/sdk/2.10.9/sratoolkit.2.10.9-ubuntu64.tar.gz
-tar -vxzf sratoolkit.2.10.9-ubuntu64.tar.gz
-export PATH=$PATH:/home/dizhen/sratoolkit.2.10.9-ubuntu64/bin
-which fastq-dump
-</code></pre>
-                  </div>
-                  <p> R code can be included and hidden as follows. </p>
-                  <div class="highlight">
-                    <pre style="background-color:#fff;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-r" data-lang="r">
-
-<span style="color:#900;font-weight:bold">library</span>(readr)
-<span style="color:#900;font-weight:bold">library</span>(dplyr)
-
-chart <span style="color:#000;font-weight:bold">&lt;-</span> <span style="color:#900;font-weight:bold">read_tsv</span>(<span style="color:#d14">&#39;chart_diff.txt&#39;</span>)
-
-generateFigure <span style="color:#000;font-weight:bold">&lt;-</span> <span style="color:#900;font-weight:bold">function</span>(chart, num, term = <span style="color:#d14">&#39;GOTERM_BP_DIRECT&#39;</span>){
-
-  p <span style="color:#000;font-weight:bold">&lt;-</span> <span style="color:#900;font-weight:bold">selectPvalue</span>(chart)
-  frame <span style="color:#000;font-weight:bold">&lt;-</span> <span style="color:#900;font-weight:bold">as.data.frame</span>(chart <span style="color:#000;font-weight:bold">%&gt;%</span>
-  <span style="color:#900;font-weight:bold">filter</span>(Category == term) <span style="color:#000;font-weight:bold">%&gt;%</span>
-    <span style="color:#900;font-weight:bold">filter</span>(c(<span style="color:#d14">&#39;Term&#39;</span>, <span style="color:#d14">&#39;%&#39;</span>, <span style="color:#d14">&#39;PValue&#39;</span>)) <span style="color:#000;font-weight:bold">%&gt;%</span>
-    <span style="color:#900;font-weight:bold">rename</span>(Ratio=<span style="color:#d14">&#39;%&#39;</span>) <span style="color:#000;font-weight:bold">%&gt;%</span>
-    <span style="color:#900;font-weight:bold">mutate</span>(Term = <span style="color:#900;font-weight:bold">as.factor</span>(<span style="color:#900;font-weight:bold">gsub</span>(<span style="color:#d14">&#39;^.*?~&#39;</span>, <span style="color:#d14">&#39;&#39;</span>,Term)), 
-           Ratio = Ratio / <span style="color:#099">100</span>))[<span style="color:#099">1</span>:<span style="color:#099">30</span>,] <span style="color:#998;font-style:italic"># make sure no less than 30 terms in total</span>
-  
-  fig2 <span style="color:#000;font-weight:bold">&lt;-</span> frame <span style="color:#000;font-weight:bold">%&gt;%</span>
-  <span style="color:#900;font-weight:bold">ggplot</span>(aes(x=<span style="color:#900;font-weight:bold">reorder</span>(Term, -PValue),y=-<span style="color:#900;font-weight:bold">log</span>(PValue),fill = Ratio)) +
-    <span style="color:#900;font-weight:bold">geom_bar</span>(stat=<span style="color:#d14">&#39;identity&#39;</span>) +
-    <span style="color:#900;font-weight:bold">coord_flip</span>() + 
-    <span style="color:#900;font-weight:bold">xlab</span>(<span style="color:#d14">&#39;Gene Ontology: Biological Process&#39;</span>) 
-    <span style="color:#900;font-weight:bold">return</span>(fig2)
-}
-
-</code></pre>
-                  </div>
-                  <h2 id="figures">Figures</h2>
-                  <h3>Figure with a hyperlink</h3>
-
-                  <figure>
-                    <a href="/images/blog/documentation/GO_barplot_diff.png" target="_blank">
-                      <img src="/images/blog/documentation/GO_barplot_diff.png"
-                        style="width: 100%; max-width: 1000px" />
-                    </a>
-
-                  </figure>
-                  <!-- <h3>Figure with different sizes</h3>
-                  <figure>
-                    <img src="/images/blog/documentation/GO_barplot_diff.png" style="width: 100%; max-width: 1000px" />
-                    <img src="/images/blog/documentation/GO_barplot_diff.png" style="width: 80%; max-width: 1000px" />
-                    <img src="/images/blog/documentation/GO_barplot_diff.png" style=" width: 50%;max-width: 1000px; " />
-                  </figure> -->
-                  <h3>Figure with a title.</h3>
-                  <figure>
-
-                    <img src="/images/blog/documentation/GO_barplot_diff.png" style="width: 100%; max-width: 1000px" />
-                    <figcaption style="text-align: center">Figure 1. Gene Oncology Analysis Result.</figcaption>
-                  </figure>
-
-                  <h2 id="list">Lists</h2>
-
-                  <h3>Unordered lists</h3>
-                  <ul>
-                    <li>Lorem ipsum dolor sit amet</li>
-                    <li>Consectetur adipiscing elit</li>
-                    <li>Integer molestie lorem at massa</li>
-                    <li>Facilisis in pretium nisl aliquet</li>
-                    <li>Nulla volutpat aliquam velit
-                      <ul>
-                        <li>Phasellus iaculis neque</li>
-                        <li>Purus sodales ultricies</li>
-                        <li>Vestibulum laoreet porttitor sem</li>
-                        <li>Ac tristique libero volutpat at</li>
-                      </ul>
-                    </li>
-                    <li>Faucibus porta lacus fringilla vel</li>
-                    <li>Aenean sit amet erat nunc</li>
-                    <li>Eget porttitor lorem</li>
-                  </ul>
-
-                  <h3>Ordered Lists</h3>
-                  <ol>
-                    <li>Lorem ipsum dolor sit amet</li>
-                    <li>Consectetur adipiscing elit</li>
-                    <li>Integer molestie lorem at massa</li>
-                    <li>Facilisis in pretium nisl aliquet</li>
-                    <li>Nulla volutpat aliquam velit</li>
-                    <li>Faucibus porta lacus fringilla vel</li>
-                    <li>Aenean sit amet erat nunc</li>
-                    <li>Eget porttitor lorem</li>
-                  </ol>
-
-                  <h2>Table</h2>
-                  <p> Here is a table.</p>
-                  <table>
-                    <tr>
-                      <th>Option</th>
-                      <th>&nbsp;&nbsp;&nbsp;</th>
-                      <th>Description</th>
-                      <th>Description</th>
-                    </tr>
-                    <tr>
-                      <td>data</td>
-                      <th>&nbsp;&nbsp;&nbsp;</th>
-                      <td>path to data files to supply the data that will be passed into templates.</td>
-                      <td>path to data files to supply the data that will be passed into templates.</td>
-                    </tr>
-                    <tr>
-                      <td>engine</td>
-                      <th>&nbsp;&nbsp;&nbsp;</th>
-                      <td>engine to be used for processing templates. Handlebars is the default.</td>
-                      <td>engine to be used for processing templates. Handlebars is the default.</td>
-                    </tr>
-                    <tr>
-                      <td>ext</td>
-                      <th>&nbsp;&nbsp;&nbsp;</th>
-                      <td>extension to be used for dest files.</td>
-                      <td>extension to be used for dest files.</td>
-                    </tr>
-                  </table>
 
                 </div>
               </body>
